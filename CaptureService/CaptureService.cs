@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Configuration;
 using System.Drawing.Imaging;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Timers;
 
 namespace CaptureService
@@ -29,7 +25,6 @@ namespace CaptureService
             bitmap.Save(fullPath, ImageFormat.Png);
         }
 
-
         public void Start()
         {
             InitializeTimer();
@@ -37,7 +32,7 @@ namespace CaptureService
 
         public void Stop()
         {
-
+            // stop method required.
         }
     }
 }

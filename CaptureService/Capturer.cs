@@ -1,7 +1,6 @@
 ﻿using Emgu.CV;
 using System.Drawing;
 
-
 namespace CaptureService
 {
     public class Capturer
@@ -11,6 +10,7 @@ namespace CaptureService
             Capture capturer = new Capture(Emgu.CV.CvEnum.CaptureType.Any);
             Mat mat = capturer.QueryFrame();
             capturer.Dispose();
+
             return mat.Bitmap;
         }
     }
